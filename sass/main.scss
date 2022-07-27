@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 @import "./base/reset";
-@import "./base/typography";
 
-@import "./components/buttons";
-
-@import "./utils/breakpoints";
-@import "./utils/mixins";
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/breakpoints";
+
+@import "./base/typography";
 
 @import "./layout/header";
 @import "./layout/footer";
 
+@import "./components/buttons";
 
 @import "./pages/home";
 @import "./pages/menu";
