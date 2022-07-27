@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  display: flex;
+  justify-content: center;
+}
+body {
+  max-width: 1440px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
