@@ -28,8 +28,8 @@
 
 /* Loader page */
 .container-loader {
-    @include flexbox($justify-content: center, $align-items: center);
-    z-index: 5;
+    @include flexbox($justify-content: center, $align-items: center, $flex-direction: row);
+    z-index: 999;
     position: fixed;
     height: 100%;
     width: 100vw;

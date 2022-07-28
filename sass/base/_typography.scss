@@ -1,17 +1,13 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: $colour-primary;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.7;
+    font-family: $font--text-regular;
+    font-size: $fontsize--regular;
+}
+h1 {
+    font-family: $font--text-secondary;
+    font-size: $fontsize--heading-1;
+    margin: $margin--heading-1;
 }
 /* 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 5rem;
-    font-style: italic;
-}
 
 textarea {
     font-family: 'Roboto', sans-serif;

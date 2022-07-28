@@ -1,0 +1,10 @@
+.location {
+    @include flexbox($flex-direction: row);
+    font-size: font--text-regular;
+    font-weight: bold;
+    background-color: $colour-background-secondary;
+
+    &__icon {
+        margin-right: 20px;
+    }
+}
