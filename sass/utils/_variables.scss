@@ -1,9 +1,22 @@
+/* Colors */
 $colour-primary: #9256dc;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
 $colour-background: #f4f4f4;
-
+$colour-background-secondary: #E5E5E5;
 $colour-light: #ffffff;
 
-/* $font-text-regular: 'Roboto', sans-serif;
-$font-text-secondary: 'Shrikhand', cursive; */
+/* Fonts Family */
+$font--text-regular: 'Roboto', sans-serif;
+$font--text-secondary: 'Shrikhand', cursive;
+
+/* Fonts Size */
+$fontsize--regular: 1rem;
+$fontsize--heading-1: $fontsize--regular + 1; 
+$fontsize--heading-1-small: $fontsize--regular + 0.7;
+
+/* Heading */
+$margin--heading-1: 9px 0 4px 0;
+
+/* Reset base on the header size */
+$height-adapter: 62px;
