@@ -343,6 +343,65 @@ button {
   }
 }
 
+.restaurants {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+}
+.restaurants__title {
+  margin: 12px 25px 12px 25px;
+  padding: 20px 0 0 0;
+}
+.restaurants .restaurant__card .card {
+  margin: 20px;
+  position: relative;
+  height: 250px;
+  border-radius: 20px;
+  background-color: white;
+}
+.restaurants .restaurant__card .card img {
+  /* height: calc(100% - 40px); */
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 62%;
+  border-radius: 20px 20px 0 0;
+  border: none;
+}
+.restaurants .restaurant__card .card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+.restaurants .restaurant__card .card__description .new-label {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  background-color: #99E2D0;
+  padding: 6px 12px 6px 12px;
+  border-radius: 2px;
+  /* font-size: $size; */
+  font-weight: bold;
+  color: #2c9c81;
+}
+.restaurants .restaurant__card .card__restaurant-name {
+  font-size: 1rem;
+  margin: 12px 0 6px 0;
+}
+.restaurants .restaurant__card .card__restaurant-location {
+  margin: 0;
+}
+.restaurants .restaurant__card .card__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  font-size: 25px;
+}
+
 main {
   padding-top: 60px;
 }
