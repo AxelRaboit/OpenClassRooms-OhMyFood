@@ -123,3 +123,71 @@
         }
     }
 }
+
+.restaurants {
+
+    background-color: $colour-background;
+    padding: 20px 0;
+
+    &__title {
+        margin: $margin--heading-2;
+        padding: 20px 0 0 0;
+    }
+
+    .restaurant {
+
+        &__card {
+
+            .card {
+                margin: 20px;
+                position: relative;
+                height: 250px;
+                border-radius: 20px;
+                background-color: white;
+
+                img {
+                    /* height: calc(100% - 40px); */
+                    height: 180px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: 50% 62%;
+                    border-radius: 20px 20px 0 0;
+                    border: none;              
+                }
+
+                &__description {
+                    @include flexbox($justify-content: space-between, $flex-direction: row);
+                    width: 90%;
+                    margin: auto;
+                    
+                    .new-label {
+                        position: absolute;
+                        top: 0;
+                        right: 15px;
+                        background-color: $colour-tertiary;
+                        padding: 6px 12px 6px 12px;
+                        border-radius: 2px;
+                        /* font-size: $size; */
+                        font-weight: bold;
+                        color: darken($colour-tertiary, $amount: 35)
+                    }
+                }
+
+                &__restaurant-name {
+                    font-size: $fontsize--regular;
+                    margin: 12px 0 6px 0;
+                }
+
+                &__restaurant-location {
+                    margin: 0;
+                }
+
+                &__like {
+                    @include flexbox;
+                    height: 100%;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
