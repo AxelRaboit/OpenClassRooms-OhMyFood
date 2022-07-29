@@ -11,8 +11,16 @@ $colour-light: #ffffff;
 $font--text-regular: 'Roboto', sans-serif;
 $font--text-secondary: 'Shrikhand', cursive;
 
+/* General */
+$padding-regular: 20px;
+$margin-large: 60px;
+
+/* Utils */
+$boxshadow--card: 0px 4px 4px rgb(128, 128, 128, 0.2);
+
 /* Fonts Size */
 $fontsize--regular: 1rem;
+$fontsize--middle: 0.9rem;
 
 $fontsize--description: $fontsize--regular + 0.1;
 

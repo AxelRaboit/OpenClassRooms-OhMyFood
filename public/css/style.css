@@ -20,6 +20,8 @@ li {
 
 /* Colors */
 /* Fonts Family */
+/* General */
+/* Utils */
 /* Fonts Size */
 /* Heading */
 /* Reset base on the header size */
@@ -235,6 +237,110 @@ button {
 }
 .informations__button {
   margin-bottom: 30px;
+}
+
+.working {
+  padding: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .working {
+    padding: unset;
+    margin: 30px;
+    width: 1200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.working .working-list {
+  margin: 30px 0 0 0;
+  padding: 0;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .working .working-list {
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.working .working-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 15px;
+  margin: 0 0 20px 10px;
+  padding: 0 30px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.2);
+}
+@media screen and (min-width: 1024px) {
+  .working .working-list__item {
+    justify-content: flex-end;
+    width: 40%;
+    max-width: 385px;
+    position: relative;
+    margin: 10px;
+  }
+  .working .working-list__item:nth-child(1) {
+    margin-left: 0;
+  }
+  .working .working-list__item:nth-child(3) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .working .working-list__item {
+    padding: 0 50px;
+  }
+}
+.working .working-list__text {
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+.working .working-list__stepnumber {
+  position: absolute;
+  left: 10px;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 100%;
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(#FF79DA, #9256dc);
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .working .working-list__stepnumber {
+    width: 30px;
+    height: 46px;
+    border-radius: 15px 0 0 15px;
+    left: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .working .working-list__stepnumber {
+    width: 30px;
+    height: 46px;
+    border-radius: 15px 0 0 15px;
+    left: 15px;
+  }
+}
+.working .working-list__icon {
+  position: absolute;
+  left: 18%;
+  color: rgb(128, 128, 128);
+  transform: translate(-50%);
+}
+@media screen and (min-width: 1024px) {
+  .working .working-list__icon {
+    position: unset;
+    left: 60px;
+  }
 }
 
 main {

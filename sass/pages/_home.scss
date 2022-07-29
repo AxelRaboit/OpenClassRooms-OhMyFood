@@ -11,7 +11,7 @@
 
 .informations {
     @include flexbox;
-    padding: 20px;
+    padding: $padding-regular;
     text-align: center;
     background-color: $colour-background;
 
@@ -27,5 +27,99 @@
 
     &__button {
         margin-bottom: 30px;
+    }
+}
+
+.working {
+    padding: $padding-regular;
+
+    @include desktop {
+        padding: unset;
+        margin: 30px;
+
+        @include desktop-size;
+    }
+    
+    .working-list {
+        
+        @include desktop {
+            @include flexbox ($justify-content: unset, $flex-direction: row);
+        }
+
+        margin: 30px 0 0 0;
+        padding: 0;
+        position: relative;
+
+        &__item {
+            @include desktop {
+                justify-content: flex-end;
+                width: 40%;
+                max-width: 385px;
+                position: relative;
+                margin: 10px;
+
+                &:nth-child(1) {
+                    margin-left: 0;
+                }
+
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            }
+
+            @include flexbox($flex-direction: row);
+            border-radius: 15px;
+            margin: 0 0 20px 10px;
+            padding: 0 30px;
+            background-color: $colour-background;
+            box-shadow: $boxshadow--card;
+
+            @include desktop {
+                padding: 0 50px;
+            }
+        }
+
+        &__text {
+            margin-left: 20px;
+            font-size: $fontsize--middle;
+        }
+
+        &__stepnumber {
+            position: absolute;
+            left: 10px;
+            transform: translate(-50%);
+            @include flexbox;
+            border-radius: 100%;
+            color: $colour-light;
+            width: 25px;
+            height: 25px;
+            background: linear-gradient($colour-secondary, $colour-primary);
+
+            @include tablet {
+                width: 30px;
+                height: 46px;
+                border-radius: 15px 0 0 15px;
+                left: 15px;
+            }
+
+            @include desktop {
+                width: 30px;
+                height: 46px;
+                border-radius: 15px 0 0 15px;
+                left: 15px;
+            }
+        }
+
+        &__icon {
+            position: absolute;
+            left: 18%;
+            color: rgba(128, 128, 128, 1);
+            transform: translate(-50%);
+
+            @include desktop {
+                position: unset;
+                left: 60px;
+            }
+        }
     }
 }
