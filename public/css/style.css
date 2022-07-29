@@ -20,6 +20,7 @@ li {
 
 /* Colors */
 /* Fonts Family */
+/* General */
 /* Fonts Size */
 /* Heading */
 /* Reset base on the header size */
@@ -235,6 +236,10 @@ button {
 }
 .informations__button {
   margin-bottom: 30px;
+}
+
+.working {
+  padding: 20px;
 }
 
 main {
