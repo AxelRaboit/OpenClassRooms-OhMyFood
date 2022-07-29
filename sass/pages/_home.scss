@@ -32,4 +32,44 @@
 
 .working {
     padding: $padding-regular;
+
+    .working-list {
+        margin: 30px 0 0 0;
+        padding: 0;
+
+        position: relative;
+
+        &__item {
+            @include flexbox($flex-direction: row);
+            border-radius: 15px;
+            margin: 0 0 20px 10px;
+            padding: 0 40px;
+            background-color: $colour-background;
+            box-shadow: $boxshadow--card;
+        }
+
+        &__text {
+            margin-left: 20px;
+            font-size: $fontsize--middle;
+        }
+
+        &__stepnumber {
+            position: absolute;
+            left: 10px;
+            transform: translate(-50%);
+            @include flexbox;
+            border-radius: 100%;
+            color: $colour-light;
+            width: 25px;
+            height: 25px;
+            background: linear-gradient($colour-secondary, $colour-primary);
+        }
+
+        &__icon {
+            position: absolute;
+            left: 18%;
+            color: rgba(128, 128, 128, 1);
+            transform: translate(-50%);
+        }
+    }
 }
