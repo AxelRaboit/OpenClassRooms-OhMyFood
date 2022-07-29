@@ -2,6 +2,7 @@
 $colour-primary: #9256dc;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
+$colour-fourthary: #717171;
 $colour-background: #f4f4f4;
 $colour-background-secondary: #E5E5E5;
 $colour-light: #ffffff;
@@ -12,11 +13,18 @@ $font--text-secondary: 'Shrikhand', cursive;
 
 /* Fonts Size */
 $fontsize--regular: 1rem;
+
+$fontsize--description: $fontsize--regular + 0.1;
+
 $fontsize--heading-1: $fontsize--regular + 1; 
 $fontsize--heading-1-small: $fontsize--regular + 0.7;
 
+$fontsize--heading-2: $fontsize--regular + 0.5; 
+$fontsize--heading-2-small: $fontsize--regular + 0.3;
+
 /* Heading */
 $margin--heading-1: 9px 0 4px 0;
+$margin--heading-2: 12px 25px 12px 25px;
 
 /* Reset base on the header size */
 $height-adapter: 60px;

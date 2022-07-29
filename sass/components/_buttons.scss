@@ -1,0 +1,15 @@
+.button { 
+    @include flexbox;
+    border-radius: 35px;
+    padding: 0 20px;
+    color: $colour-light;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    min-width: 150px;
+ 
+    &:hover{
+       filter: brightness(1.2); 
+       cursor: pointer;
+      
+    }
+ 
+ }

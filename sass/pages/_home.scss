@@ -8,3 +8,24 @@
         margin-right: 20px;
     }
 }
+
+.informations {
+    @include flexbox;
+    padding: 20px;
+    text-align: center;
+    background-color: $colour-background;
+
+    &__title {
+        margin: $margin--heading-2;
+    }
+
+    &__text {
+        margin: 0 0 30px 0;
+        font-size: $fontsize--description;
+        color: $colour-fourthary;
+    }
+
+    &__button {
+        margin-bottom: 30px;
+    }
+}
