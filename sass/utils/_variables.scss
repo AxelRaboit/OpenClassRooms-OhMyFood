@@ -30,9 +30,8 @@ $fontsize--heading-1-small: $fontsize--regular + 0.7;
 $fontsize--heading-2: $fontsize--regular + 0.5; 
 $fontsize--heading-2-small: $fontsize--regular + 0.3;
 
-/* Heading */
+/* Heading marge */
 $margin--heading-1: 9px 0 4px 0;
-$margin--heading-2: 12px 25px 12px 25px;
 
 /* Reset base on the header size */
 $height-adapter: 60px;

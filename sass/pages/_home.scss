@@ -15,10 +15,6 @@
     text-align: center;
     background-color: $colour-background;
 
-    &__title {
-        margin: $margin--heading-2;
-    }
-
     &__text {
         margin: 0 0 30px 0;
         font-size: $fontsize--description;
@@ -127,10 +123,9 @@
 .restaurants {
 
     background-color: $colour-background;
-    padding: 20px 0;
+    padding: 20px;
 
     &__title {
-        margin: $margin--heading-2;
         padding: 20px 0 0 0;
     }
 
@@ -139,7 +134,7 @@
         &__card {
 
             .card {
-                margin: 20px;
+                margin: 20px 0;
                 position: relative;
                 height: 250px;
                 border-radius: 20px;

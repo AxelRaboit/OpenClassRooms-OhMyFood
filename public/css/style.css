@@ -23,7 +23,7 @@ li {
 /* General */
 /* Utils */
 /* Fonts Size */
-/* Heading */
+/* Heading marge */
 /* Reset base on the header size */
 /* Flexbox Mixin */
 body {
@@ -37,20 +37,10 @@ h1 {
   margin: 9px 0 4px 0;
 }
 
-/* 
-
-textarea {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 2rem;
+h2 {
+  font-family: "Roboto", sans-serif;
 }
 
-button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 2.75rem;
-} */
 .header {
   display: flex;
   justify-content: space-around;
@@ -227,9 +217,6 @@ button {
   text-align: center;
   background-color: #f4f4f4;
 }
-.informations__title {
-  margin: 12px 25px 12px 25px;
-}
 .informations__text {
   margin: 0 0 30px 0;
   font-size: 1.1rem;
@@ -345,14 +332,13 @@ button {
 
 .restaurants {
   background-color: #f4f4f4;
-  padding: 20px 0;
+  padding: 20px;
 }
 .restaurants__title {
-  margin: 12px 25px 12px 25px;
   padding: 20px 0 0 0;
 }
 .restaurants .restaurant__card .card {
-  margin: 20px;
+  margin: 20px 0;
   position: relative;
   height: 250px;
   border-radius: 20px;
