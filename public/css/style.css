@@ -389,6 +389,7 @@ button {
   margin: 12px 0 6px 0;
 }
 .restaurants .restaurant__card .card__restaurant-location {
+  color: #717171;
   margin: 0;
 }
 .restaurants .restaurant__card .card__like {
