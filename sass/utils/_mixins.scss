@@ -5,3 +5,10 @@
     align-items: $align-items;
     flex-direction: $flex-direction;
 }
+
+@mixin desktop-size {
+    width: 1200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
