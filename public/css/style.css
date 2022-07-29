@@ -69,7 +69,10 @@ h2 {
   cursor: pointer;
 }
 
-/* Loader page Transition from appear to disappear */
+/* Title: Loader page Transition from appear to disappear
+ *
+ *
+*/
 @keyframes fadeTransition {
   0% {
     opacity: 1;
@@ -84,7 +87,10 @@ h2 {
     z-index: -1;
   }
 }
-/* Loader rotation animation */
+/* Title: Loader rotation animation
+ *
+ *
+*/
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -93,7 +99,10 @@ h2 {
     transform: rotate(360deg);
   }
 }
-/* Loader page */
+/* Title: Loader page
+ *
+ *
+*/
 .container-loader {
   display: flex;
   justify-content: center;
@@ -109,7 +118,10 @@ h2 {
   animation: fadeTransition 4s forwards;
 }
 
-/* Loader full item */
+/* Title: Loader full item
+ *
+ *
+*/
 .loader {
   width: 80px;
   height: 80px;

@@ -1,4 +1,7 @@
-/* Loader page Transition from appear to disappear */
+/* Title: Loader page Transition from appear to disappear
+ *
+ *
+*/
 @keyframes fadeTransition {
    0% {
        opacity: 1;
@@ -16,7 +19,10 @@
    }
 }
 
-/* Loader rotation animation */
+/* Title: Loader rotation animation
+ *
+ *
+*/
 @keyframes loader {
     0% {
         transform: rotate(0deg);
@@ -26,7 +32,10 @@
     }
 }
 
-/* Loader page */
+/* Title: Loader page
+ *
+ *
+*/
 .container-loader {
     @include flexbox($justify-content: center, $align-items: center, $flex-direction: row);
     z-index: 999;
@@ -39,7 +48,10 @@
     animation: fadeTransition 4s forwards;
 }
 
-/* Loader full item */
+/* Title: Loader full item
+ *
+ *
+*/
 .loader {
     width: 80px;
     height: 80px;
