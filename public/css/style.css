@@ -359,7 +359,6 @@ button {
   background-color: white;
 }
 .restaurants .restaurant__card .card img {
-  /* height: calc(100% - 40px); */
   height: 180px;
   width: 100%;
   object-fit: cover;
