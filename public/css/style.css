@@ -300,7 +300,31 @@ h2, h3 {
   background-color: #E5E5E5;
 }
 .location__icon {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+.location__city {
+  height: 51px;
+  padding: 0;
+  text-align: center;
+  background: #E5E5E5;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.location__city::placeholder {
+  color: #5D5D5D;
+}
+.location__city::-webkit-input-placeholder {
+  color: #5D5D5D;
+}
+.location__city:-moz-placeholder { /* Firefox 18- */
+  color: #000000;
+}
+.location__city::-moz-placeholder { /* Firefox 19+ */
+  color: #000000;
+}
+.location__city:-ms-input-placeholder {
+  color: #000000;
 }
 
 .informations {

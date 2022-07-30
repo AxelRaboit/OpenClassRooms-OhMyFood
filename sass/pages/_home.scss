@@ -5,7 +5,38 @@
     background-color: $colour-background-secondary;
 
     &__icon {
-        margin-right: 20px;
+        margin-right: 10px;
+    }
+
+    &__city {
+        height: 51px;
+        padding: 0;
+        text-align: center;
+        background: $colour-background-secondary;
+        border: none;
+        font-size: $fontsize--regular;
+        font-weight: bold;
+
+        &::placeholder {
+            color: $colour-dark-placeholder-chrm;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $colour-dark-placeholder-chrm;
+         }
+         
+         &:-moz-placeholder { /* Firefox 18- */
+            color: $colour-dark-placeholder-moz;
+         }
+         
+         &::-moz-placeholder {  /* Firefox 19+ */
+            color: $colour-dark-placeholder-moz;
+         }
+         
+         &:-ms-input-placeholder {  
+            color: $colour-dark-placeholder-moz;
+         }
+         
     }
 }
 
