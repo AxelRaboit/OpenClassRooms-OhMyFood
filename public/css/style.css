@@ -385,9 +385,6 @@ h2 {
     padding: 20px 0 20px 0;
   }
 }
-.restaurants__title {
-  /* padding: 20px 0 0 0; */
-}
 @media screen and (min-width: 1024px) {
   .restaurants__title {
     width: 1200px;
