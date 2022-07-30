@@ -175,12 +175,6 @@
                     color: $colour-fourthary;
                     margin: 0;
                 }
-
-                &__like {
-                    @include flexbox;
-                    height: 100%;
-                    font-size: 25px;
-                }
             }
         }
     }

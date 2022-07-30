@@ -1,0 +1,28 @@
+.heart {
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    font-size: $size--heart;
+
+    @include tablet {
+        right: 40px;
+    }
+
+    @include desktop {
+        right: 65px;
+    }
+
+    &__filled {
+        opacity: 0;
+        background: linear-gradient(#9356DC, #FF79DA);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            opacity: 1;   
+        }
+    }
+}
