@@ -45,6 +45,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: no-wrap;
   flex-direction: column;
   box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.5);
   position: fixed;
@@ -85,6 +86,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: no-wrap;
   flex-direction: column;
   border-radius: 35px;
   padding: 0 20px;
@@ -135,6 +137,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: no-wrap;
   flex-direction: row;
   z-index: 999;
   position: fixed;
@@ -237,6 +240,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: no-wrap;
   flex-direction: row;
   font-size: font--text-regular;
   font-weight: bold;
@@ -250,6 +254,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: no-wrap;
   flex-direction: column;
   padding: 20px;
   text-align: center;
@@ -287,6 +292,7 @@ h2 {
     display: flex;
     justify-content: unset;
     align-items: center;
+    flex-wrap: no-wrap;
     flex-direction: row;
   }
 }
@@ -294,6 +300,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: no-wrap;
   flex-direction: row;
   border-radius: 15px;
   margin: 0 0 20px 10px;
@@ -332,6 +339,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: no-wrap;
   flex-direction: column;
   border-radius: 100%;
   color: #ffffff;
@@ -372,8 +380,37 @@ h2 {
   background-color: #f4f4f4;
   padding: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 20px 0 20px 0;
+  }
+}
 .restaurants__title {
   padding: 20px 0 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__title {
+    width: 1200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurant {
+    width: 1200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, auto));
+    grid-column-gap: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurant__card {
+    grid-column-end: span 6;
+  }
 }
 .restaurants .restaurant__card .card {
   margin: 20px 0;
@@ -394,6 +431,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: no-wrap;
   flex-direction: row;
   width: 90%;
   margin: auto;

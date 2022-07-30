@@ -125,13 +125,32 @@
     background-color: $colour-background;
     padding: 20px;
 
+    @include desktop {
+        padding: 20px 0 20px 0;
+    }
+
     &__title {
         padding: 20px 0 0 0;
+
+        @include desktop {
+            @include desktop-size;
+        }
     }
 
     .restaurant {
+        @include desktop {
+            @include desktop-size;
+            
+            display: grid;
+            grid-template-columns: repeat(12, minmax(auto, auto));
+            grid-column-gap: 40px;
+        }
 
         &__card {
+
+            @include desktop {
+                grid-column-end: span 6;
+            }
 
             .card {
                 margin: 20px 0;
