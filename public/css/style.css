@@ -54,7 +54,6 @@ h2 {
 }
 
 .heart {
-  display: flex;
   position: absolute;
   bottom: 25px;
   right: 25px;
