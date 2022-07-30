@@ -37,12 +37,8 @@ h1 {
   margin: 9px 0 4px 0;
 }
 
-h2 {
+h2, h3 {
   font-family: "Roboto", sans-serif;
-}
-
-h3 {
-  font-family: "Shrikhand", cursive;
 }
 
 .header {
@@ -76,12 +72,24 @@ h3 {
   }
 }
 .footer__title {
+  font-size: 1.4rem;
+  font-family: "Shrikhand", cursive;
   padding: 20px;
   margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .footer__title {
+    padding: 20px 0 20px 0;
+  }
 }
 .footer__list {
   padding: 0 0 0 20px;
   margin: 0 0 20px 0;
+}
+@media screen and (min-width: 1024px) {
+  .footer__list {
+    padding: 0 0 20px 0;
+  }
 }
 .footer__item {
   margin-bottom: 10px;
@@ -347,6 +355,10 @@ h3 {
   background-color: #f4f4f4;
   box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.2);
 }
+.working .working-list__item:hover {
+  background-color: #f1eafb;
+  cursor: pointer;
+}
 @media screen and (min-width: 1024px) {
   .working .working-list__item {
     justify-content: flex-end;
@@ -483,8 +495,8 @@ h3 {
   color: #2c9c81;
 }
 .restaurants .restaurant__card .card__restaurant-name {
-  font-size: 1rem;
-  margin: 12px 0 6px 0;
+  font-size: 1.2rem;
+  margin: 6px 0 6px 0;
 }
 .restaurants .restaurant__card .card__restaurant-location {
   color: #717171;

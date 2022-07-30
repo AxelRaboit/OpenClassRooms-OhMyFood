@@ -11,11 +11,23 @@
     color: $colour-light;
 
     &__title {
+
+        @include desktop {
+            padding: 20px 0 20px 0;
+        }
+
+        font-size: $fontsize--regular + 0.4;
+        font-family: $font--text-secondary;
         padding: $padding-regular;
         margin: 0;
     }
     
     &__list {
+
+        @include desktop {
+            padding: 0 0 20px 0;
+        }
+
         padding: 0 0 0 20px;
         margin: 0 0 20px 0;
     }

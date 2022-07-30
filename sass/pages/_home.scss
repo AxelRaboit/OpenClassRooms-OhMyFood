@@ -47,6 +47,12 @@
         position: relative;
 
         &__item {
+
+            &:hover {
+                background-color: #f1eafb;
+                cursor: pointer;
+            }
+
             @include desktop {
                 justify-content: flex-end;
                 width: 40%;
@@ -184,8 +190,8 @@
                 }
 
                 &__restaurant-name {
-                    font-size: $fontsize--regular;
-                    margin: 12px 0 6px 0;
+                    font-size: $fontsize--heading-3;
+                    margin: 6px 0 6px 0;
                 }
 
                 &__restaurant-location {
