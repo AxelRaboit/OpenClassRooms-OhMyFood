@@ -157,6 +157,14 @@
             }
 
             .card {
+
+                transition: all .3s ease-in-out;
+                box-shadow: 4px 4px 8px rgba(128, 128, 128, 0.5);
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+
                 margin: 20px 0;
                 position: relative;
                 height: 250px;
