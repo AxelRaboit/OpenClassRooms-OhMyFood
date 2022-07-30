@@ -100,6 +100,9 @@ h2, h3 {
 .footer__icon {
   margin-right: 10px;
 }
+.footer__icon-second-element {
+  margin-right: 3px;
+}
 
 .heart {
   position: absolute;
