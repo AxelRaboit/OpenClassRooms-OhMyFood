@@ -153,8 +153,9 @@ h2, h3 {
 }
 
 /* Title: Loader page Transition from appear to disappear
- *
- *
+ * Description: Timeline for the fade transition, with 3 checkpoints, first display the item, second keep displaying item
+ * and add transition for the last step, and last step for put the opacity to 0 and make sure through the z index that the
+ * item doesn't cause any issues.
 */
 @keyframes fadeTransition {
   0% {
@@ -171,7 +172,7 @@ h2, h3 {
   }
 }
 /* Title: Loader rotation animation
- *
+ * Description: spin effect to the loader item with checkpoints
  *
 */
 @keyframes loader {
@@ -183,7 +184,7 @@ h2, h3 {
   }
 }
 /* Title: Loader page
- *
+ * Description: main properties for the loader container
  *
 */
 .container-loader {
@@ -203,14 +204,16 @@ h2, h3 {
 }
 
 /* Title: Loader full item
- *
+ * Description: Loader content with the loader size and all dots that constitute de loader
  *
 */
 .loader {
+  /* Loader size */
   width: 80px;
   height: 80px;
 }
 .loader__item {
+  /* Rotation, timer, animation shape */
   animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   transform-origin: 40px 40px;
 }
