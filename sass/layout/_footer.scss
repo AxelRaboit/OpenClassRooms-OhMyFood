@@ -47,4 +47,10 @@
     &__icon-second-element {
         margin-right: 3px;
     }
+
+    &__link {
+        &:hover {
+            color: $colour-secondary;
+        }
+    }
 }

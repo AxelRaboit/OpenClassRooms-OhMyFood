@@ -103,6 +103,9 @@ h2, h3 {
 .footer__icon-second-element {
   margin-right: 3px;
 }
+.footer__link:hover {
+  color: #FF79DA;
+}
 
 .heart {
   position: absolute;
