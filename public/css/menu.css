@@ -1,3 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
+}
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Colors */
+/* Fonts Family */
+/* General */
+/* Utils */
+/* Fonts Size */
+/* Heading marge */
+/* Reset base on the header size */
+/* Flexbox Mixin */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+  margin: 9px 0 4px 0;
+}
+
+h2, h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.5);
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  background-color: #323232;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .footer__container {
+    width: 1200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.footer__title {
+  font-size: 1.4rem;
+  font-family: "Shrikhand", cursive;
+  padding: 20px;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .footer__title {
+    padding: 20px 0 20px 0;
+  }
+}
+.footer__list {
+  padding: 0 0 0 20px;
+  margin: 0 0 20px 0;
+}
+@media screen and (min-width: 1024px) {
+  .footer__list {
+    padding: 0 0 20px 0;
+  }
+}
+.footer__item {
+  margin-bottom: 10px;
+}
+.footer__item:last-child {
+  margin-bottom: 0;
+}
+.footer__icon {
+  margin-right: 10px;
+}
+.footer__icon-second-element {
+  margin-right: 3px;
+}
+.footer__link:hover {
+  color: #FF79DA;
+}
+
+.heart {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .heart {
+    right: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .heart {
+    right: 65px;
+  }
+}
+.heart__filled {
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.2s ease-in-out;
+}
+.heart__filled:hover {
+  opacity: 1;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  border-radius: 35px;
+  padding: 0 20px;
+  color: #ffffff;
+  background: linear-gradient(#FF79DA, #9256dc);
+  min-width: 150px;
+}
+.button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+/* Title: Loader page Transition from appear to disappear
+ * Description: Timeline for the fade transition, with 3 checkpoints, first display the item, second keep displaying item
+ * and add transition for the last step, and last step for put the opacity to 0 and make sure through the z index that the
+ * item doesn't cause any issues.
+*/
+@keyframes fadeTransition {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  80% {
+    opacity: 1;
+    transition: ease-out;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+/* Title: Loader rotation animation
+ * Description: spin effect to the loader item with checkpoints
+ *
+*/
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Title: Loader page
+ * Description: main properties for the loader container
+ *
+*/
+.container-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  z-index: 999;
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(#9256dc, #ff79da);
+  animation: fadeTransition 4s forwards;
+}
+
+/* Title: Loader full item
+ * Description: Loader content with the loader size and all dots that constitute de loader
+ *
+*/
+.loader {
+  /* Loader size */
+  width: 80px;
+  height: 80px;
+}
+.loader__item {
+  /* Rotation, timer, animation shape */
+  animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.loader__item:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.loader__item:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.loader__item:nth-child(1):after {
+  background-color: #99E2D0;
+  top: 63px;
+  left: 63px;
+}
+.loader__item:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.loader__item:nth-child(2):after {
+  background-color: #99E2D0;
+  top: 68px;
+  left: 56px;
+}
+.loader__item:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.loader__item:nth-child(3):after {
+  background-color: #99E2D0;
+  top: 71px;
+  left: 48px;
+}
+.loader__item:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.loader__item:nth-child(4):after {
+  background-color: #99E2D0;
+  top: 72px;
+  left: 40px;
+}
+.loader__item:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.loader__item:nth-child(5):after {
+  background-color: #99E2D0;
+  top: 71px;
+  left: 32px;
+}
+.loader__item:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.loader__item:nth-child(6):after {
+  background-color: #99E2D0;
+  top: 68px;
+  left: 24px;
+}
+.loader__item:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.loader__item:nth-child(7):after {
+  background-color: #99E2D0;
+  top: 63px;
+  left: 17px;
+}
+.loader__item:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.loader__item:nth-child(8):after {
+  background-color: #99E2D0;
+  top: 56px;
+  left: 12px;
+}
 
 /*# sourceMappingURL=menu.css.map */

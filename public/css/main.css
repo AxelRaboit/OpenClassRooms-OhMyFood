@@ -385,7 +385,7 @@ h2, h3 {
   background-color: #f4f4f4;
   box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.2);
 }
-.working .working-list__item:nth-child(3) {
+.working .working-list__item:hover {
   background-color: #f1eafb;
 }
 @media screen and (min-width: 1024px) {
