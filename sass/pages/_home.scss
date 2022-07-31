@@ -23,19 +23,19 @@
 
         &::-webkit-input-placeholder {
             color: $colour-dark-placeholder-chrm;
-         }
+        }
          
          &:-moz-placeholder { /* Firefox 18- */
             color: $colour-dark-placeholder-moz;
-         }
+        }
          
          &::-moz-placeholder {  /* Firefox 19+ */
             color: $colour-dark-placeholder-moz;
-         }
+        }
          
          &:-ms-input-placeholder {  
             color: $colour-dark-placeholder-moz;
-         }
+        }
          
     }
 }
