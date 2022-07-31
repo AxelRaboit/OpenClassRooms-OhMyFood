@@ -17,10 +17,6 @@
         font-size: $fontsize--regular;
         font-weight: bold;
 
-        &::placeholder {
-            color: $colour-dark-placeholder-chrm;
-        }
-
         &::-webkit-input-placeholder {
             color: $colour-dark-placeholder-chrm;
         }

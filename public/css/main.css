@@ -314,9 +314,6 @@ h2, h3 {
   font-size: 1rem;
   font-weight: bold;
 }
-.location__city::placeholder {
-  color: #5D5D5D;
-}
 .location__city::-webkit-input-placeholder {
   color: #5D5D5D;
 }
