@@ -72,7 +72,7 @@
         margin-bottom: 50px;
 
         &__container {
-            @include flexbox($flex-direction: row, $justify-content: space-between, $align-items: flex-end);
+            @include flexbox($flex-direction: row, $justify-content: space-between, $align-items: center);
             border-radius: 20px;
             background-color: $colour-light;
             margin-bottom: 20px;
@@ -80,15 +80,16 @@
         }
 
         &__price {
-            text-align: end;
             padding-right: 20px;
             margin-left: auto;
+            margin-top: 40px;
         }
     }
 
     .menu-detail-content-text {
 
-        padding: $padding-horizontal;
+        padding: 10px 20px;
+        flex: 1;
 
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -105,6 +106,7 @@
 
         &__title-complement {
             margin-top: 5px;
+            margin-bottom: 0;
 
             text-overflow: ellipsis;
             overflow: hidden;
