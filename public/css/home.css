@@ -130,6 +130,35 @@ h2, h3 {
   opacity: 1;
 }
 
+.menu-detail-content__check {
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  color: #ffffff;
+  display: inline-block;
+  height: 84px;
+  transition: all 0.3s ease-out;
+  width: 0px;
+  position: relative;
+}
+.menu-detail-content__check .fa-circle-check {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, -50%) rotate(0turn);
+}
+.menu-detail-content__container {
+  overflow: hidden;
+}
+.menu-detail-content__container:hover .menu-detail-content__check {
+  width: 65px;
+}
+.menu-detail-content__container:hover .fa-circle-check {
+  transform: translate(-50%, -50%) rotate(1turn);
+  transition: all 0.3s ease-in-out;
+  animation-delay: 0.1s;
+}
+
 .button {
   display: flex;
   justify-content: center;

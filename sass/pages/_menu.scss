@@ -13,44 +13,108 @@
     }
 }
 
-.restaurant-image {
-    object-fit: cover;
-    position: fixed;
-    z-index: -1;
-    width: 100%;
+.restaurant-visual {
+
+    &__image {
+        object-fit: cover;
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+    }
 }
 
 .menu {
     margin-top: 200px;
-    background-color: $colour-light;
+    background-color: $colour-light-darker;
     border-radius: 30px 30px 0 0;
 
     .menu-header {
         @include flexbox($flex-direction: row, $justify-content: space-between);
         padding: $padding-regular;
+        position: relative;
 
         &__title {
             font-family: $font--text-secondary;
             font-size: $fontsize--heading-2;
+            margin-bottom: 0;
         }
 
         &__heart {
+            position: absolute;
             font-size: 30px;
+            right: 60px;
+            top: 40px;
         }
     }
 
     .menu-detail {
         &__section {
-            padding: $padding-regular;
+            padding: 0 20px 0 20px;
+        }
+
+        &__title {
+
+            font-weight: 100;
+
+            &::after {
+                height: 3px;
+                display: block;
+                width: 45px;
+                margin-top: 5px;
+                background: #99E2D0;
+                content: '';
+            }
+        }
+    }
+
+    .menu-detail-content {
+        &__container {
+            @include flexbox($flex-direction: row, $justify-content: space-between, $align-items: flex-end);
+            border-radius: 20px;
+            background-color: $colour-light;
+            margin-bottom: 20px;
+            box-shadow: $boxshadow--card;
+        }
+
+        &__price {
+            text-align: end;
+            padding-right: 20px;
+            margin-left: auto;
+        }
+    }
+
+    .menu-detail-content-text {
+
+        padding: $padding-horizontal;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &__title {
+            margin: 0;
+            font-size: $fontsize--heading-4;
+
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+        }
+
+        &__title-complement {
+            margin-top: 5px;
+
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
 
     .order {
 
         padding: $padding-regular;
+        @include flexbox;
 
         &__button {
-            max-width: 200px;
+            min-width: 200px;
             border: none;
         }
     }

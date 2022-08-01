@@ -5,6 +5,7 @@ $colour-tertiary: #99E2D0;
 $colour-fourthary: #717171;
 $colour-background: #f4f4f4;
 $colour-background-secondary: #E5E5E5;
+$colour-light-darker: #f4f4f4;
 $colour-light: #ffffff;
 $colour-dark-placeholder-chrm: #5D5D5D;
 $colour-dark-placeholder-moz: #000000;
@@ -15,6 +16,8 @@ $font--text-secondary: 'Shrikhand', cursive;
 
 /* General */
 $padding-regular: 20px;
+$padding-vertical: 20px 0;
+$padding-horizontal: 0 20px;
 $margin-large: 60px;
 
 /* Utils */
@@ -36,6 +39,8 @@ $fontsize--heading-2-small: $fontsize--regular + 0.3;
 
 $fontsize--heading-3: $fontsize--regular + 0.2; 
 $fontsize--heading-3-small: $fontsize--regular + 0.1;
+
+$fontsize--heading-4: $fontsize--regular + 0.1;
 
 /* Heading marge */
 $margin--heading-1: 9px 0 4px 0;
