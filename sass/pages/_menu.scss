@@ -68,6 +68,9 @@
     }
 
     .menu-detail-content {
+
+        margin-bottom: 50px;
+
         &__container {
             @include flexbox($flex-direction: row, $justify-content: space-between, $align-items: flex-end);
             border-radius: 20px;

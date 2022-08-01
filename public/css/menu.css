@@ -388,6 +388,9 @@ main {
   background: #99E2D0;
   content: "";
 }
+.menu .menu-detail-content {
+  margin-bottom: 50px;
+}
 .menu .menu-detail-content__container {
   display: flex;
   justify-content: space-between;
