@@ -16,6 +16,10 @@
 @import "./components/buttons";
 @import "./components/loader";
 
+body {
+    @include desktop-size;
+}
+
 main {
     padding-top: $height-adapter;
 }

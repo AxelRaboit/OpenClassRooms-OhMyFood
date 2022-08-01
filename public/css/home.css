@@ -50,8 +50,11 @@ h2, h3 {
   box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.5);
   position: fixed;
   z-index: 6;
-  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff;
+  width: 100%;
 }
 
 .footer {
@@ -63,14 +66,6 @@ h2, h3 {
   background-color: #323232;
   color: #ffffff;
 }
-@media screen and (min-width: 1024px) {
-  .footer__container {
-    width: 1440px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .footer__title {
   font-size: 1.4rem;
   font-family: "Shrikhand", cursive;
@@ -79,7 +74,7 @@ h2, h3 {
 }
 @media screen and (min-width: 1024px) {
   .footer__title {
-    padding: 20px 0 20px 0;
+    padding: 20px;
   }
 }
 .footer__list {
@@ -88,7 +83,7 @@ h2, h3 {
 }
 @media screen and (min-width: 1024px) {
   .footer__list {
-    padding: 0 0 20px 0;
+    padding: 20px;
   }
 }
 .footer__item {
@@ -292,6 +287,12 @@ h2, h3 {
   left: 12px;
 }
 
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main {
   padding-top: 60px;
 }
@@ -357,10 +358,6 @@ main {
   .working {
     padding: unset;
     margin: 30px;
-    width: 1440px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 .working .working-list {
@@ -371,7 +368,7 @@ main {
 @media screen and (min-width: 1024px) {
   .working .working-list {
     display: flex;
-    justify-content: unset;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: no-wrap;
     flex-direction: row;
@@ -396,7 +393,6 @@ main {
   .working .working-list__item {
     justify-content: flex-end;
     width: 40%;
-    max-width: 385px;
     position: relative;
     margin: 10px;
   }
@@ -466,23 +462,11 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .restaurants {
-    padding: 20px 0 20px 0;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .restaurants__title {
-    width: 1440px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
   .restaurants .restaurant {
-    width: 1440px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     display: grid;
     grid-template-columns: repeat(12, minmax(auto, auto));
     grid-column-gap: 40px;

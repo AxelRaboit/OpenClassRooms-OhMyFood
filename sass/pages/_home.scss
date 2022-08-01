@@ -59,14 +59,12 @@
     @include desktop {
         padding: unset;
         margin: 30px;
-
-        @include desktop-size;
     }
     
     .working-list {
         
         @include desktop {
-            @include flexbox ($justify-content: unset, $flex-direction: row);
+            @include flexbox ($justify-content: space-between, $flex-direction: row);
         }
 
         margin: 30px 0 0 0;
@@ -82,7 +80,6 @@
             @include desktop {
                 justify-content: flex-end;
                 width: 40%;
-                max-width: 385px;
                 position: relative;
                 margin: 10px;
 
@@ -158,19 +155,11 @@
     padding: 20px;
 
     @include desktop {
-        padding: 20px 0 20px 0;
-    }
-
-    &__title {
-        @include desktop {
-            @include desktop-size;
-        }
+        padding: 20px;
     }
 
     .restaurant {
         @include desktop {
-            @include desktop-size;
-            
             display: grid;
             grid-template-columns: repeat(12, minmax(auto, auto));
             grid-column-gap: 40px;
