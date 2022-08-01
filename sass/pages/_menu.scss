@@ -1,0 +1,57 @@
+.header {
+    &__items {
+        @include flexbox($flex-direction: row);
+        position: relative;
+        width: 100%;
+    }
+    
+    &__arrow {
+        position: absolute;
+        bottom: 25%;
+        left: 25px;
+        font-size: 25px;
+    }
+}
+
+.restaurant-image {
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+}
+
+.menu {
+    margin-top: 200px;
+    background-color: $colour-light;
+    border-radius: 30px 30px 0 0;
+
+    .menu-header {
+        @include flexbox($flex-direction: row, $justify-content: space-between);
+        padding: $padding-regular;
+
+        &__title {
+            font-family: $font--text-secondary;
+            font-size: $fontsize--heading-2;
+        }
+
+        &__heart {
+            font-size: 30px;
+        }
+    }
+
+    .menu-detail {
+        &__section {
+            padding: $padding-regular;
+        }
+    }
+
+    .order {
+
+        padding: $padding-regular;
+
+        &__button {
+            max-width: 200px;
+            border: none;
+        }
+    }
+}
