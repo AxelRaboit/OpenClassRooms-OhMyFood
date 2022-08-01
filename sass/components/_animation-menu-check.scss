@@ -1,0 +1,35 @@
+.menu-detail-content {
+    &__check {
+        background-color: $colour-tertiary;
+        border-radius: 0 20px 20px 0;
+        color: $colour-light;
+        display: inline-block;
+        height: 84px;
+        transition: all 0.3s ease-out;
+        width: 0px;
+        position: relative;
+
+        .fa-circle-check {
+            font-size: 1.5rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(50%, -50%) rotate(0turn);
+        }
+    }
+
+    &__container {
+
+        overflow: hidden;
+
+        &:hover .menu-detail-content__check {
+            width : 65px;
+        }
+    
+        &:hover .fa-circle-check {
+            transform: translate(-50%, -50%) rotate(1turn);
+            transition: all 0.3s ease-in-out;
+            animation-delay: 0.1s;
+        }
+    }
+}

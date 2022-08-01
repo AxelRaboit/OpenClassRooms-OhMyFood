@@ -1,11 +1,5 @@
 .footer {
 
-    &__container {
-        @include desktop {
-            @include desktop-size;
-        }
-    }
-
     @include flexbox($align-items: flex-start);
     background-color: #323232;
     color: $colour-light;
@@ -13,7 +7,7 @@
     &__title {
 
         @include desktop {
-            padding: 20px 0 20px 0;
+            padding: 20px;
         }
 
         font-size: $fontsize--regular + 0.4;
@@ -25,7 +19,7 @@
     &__list {
 
         @include desktop {
-            padding: 0 0 20px 0;
+            padding: 20px;
         }
 
         padding: 0 0 0 20px;

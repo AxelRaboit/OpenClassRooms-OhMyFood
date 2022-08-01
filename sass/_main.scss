@@ -13,8 +13,13 @@
 @import "./layout/footer";
 
 @import "./components/animation-like";
+@import "./components/animation-menu-check";
 @import "./components/buttons";
 @import "./components/loader";
+
+body {
+    @include desktop-size;
+}
 
 main {
     padding-top: $height-adapter;
