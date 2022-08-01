@@ -4,7 +4,7 @@
   "description": "OpenClassRooms: Project 3 - OhMyFood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/main.css --style expanded ./sass/menu.scss:./public/css/menu.css --style expanded"
+    "sass": "sass --watch ./sass/home.scss:./public/css/home.css --style expanded ./sass/menu.scss:./public/css/menu.css --style expanded"
   },
   "author": "AxelR",
   "license": "ISC"
