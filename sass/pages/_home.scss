@@ -3,6 +3,10 @@
     font-weight: bold;
     background-color: $colour-background-secondary;
 
+    &__icon {
+        margin-right: 10px;
+    }
+
     &__content {
         @include flexbox($flex-direction: row);
     }

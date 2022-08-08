@@ -405,6 +405,9 @@ main {
   font-weight: bold;
   background-color: #E5E5E5;
 }
+.location__icon {
+  margin-right: 10px;
+}
 .location__content {
   display: flex;
   justify-content: center;
