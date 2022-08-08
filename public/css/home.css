@@ -615,7 +615,7 @@ main {
 }
 .restaurants .restaurant__card .card__description .new-label {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 15px;
   background-color: #99E2D0;
   padding: 6px 12px 6px 12px;
