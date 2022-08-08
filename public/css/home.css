@@ -50,9 +50,8 @@ h2, h3 {
   box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.5);
   position: fixed;
   z-index: 6;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  /* @include desktop-size; */
+  text-align: center;
   background-color: #ffffff;
   width: 100%;
 }
@@ -170,6 +169,7 @@ h2, h3 {
   color: #ffffff;
   background: linear-gradient(#FF79DA, #9256dc);
   min-width: 150px;
+  max-width: 250px;
 }
 .button:hover {
   filter: brightness(1.2);
@@ -316,32 +316,45 @@ h2, h3 {
   left: 12px;
 }
 
-body {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* body {
+    @include desktop-size;
+} */
 main {
   padding-top: 60px;
 }
 
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .location {
+  font-size: font--text-regular;
+  font-weight: bold;
+  background-color: #E5E5E5;
+}
+.location__content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: no-wrap;
   flex-direction: row;
-  font-size: font--text-regular;
-  font-weight: bold;
-  background-color: #E5E5E5;
-}
-.location__icon {
-  margin-right: 10px;
 }
 .location__city {
   height: 51px;
-  padding: 0;
   text-align: center;
   background: #E5E5E5;
   border: none;
@@ -372,12 +385,22 @@ main {
   background-color: #f4f4f4;
 }
 .informations__text {
-  margin: 0 0 30px 0;
+  margin: 20px 0 30px 0;
   font-size: 1.1rem;
   color: #717171;
 }
+.informations__container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+}
 .informations__button {
   margin-bottom: 30px;
+}
+.informations__button p {
+  padding: 14.5px;
 }
 
 .working {
@@ -391,7 +414,6 @@ main {
 }
 .working .working-list {
   margin: 30px 0 0 0;
-  padding: 0;
   position: relative;
 }
 @media screen and (min-width: 1024px) {
@@ -411,16 +433,19 @@ main {
   flex-direction: row;
   border-radius: 15px;
   margin: 0 0 20px 10px;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   background-color: #f4f4f4;
   box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.2);
+  /* @include desktop {
+      padding: 0 50px;
+  } */
 }
 .working .working-list__item:hover {
   background-color: #f1eafb;
 }
 @media screen and (min-width: 1024px) {
   .working .working-list__item {
-    justify-content: flex-end;
+    justify-content: center;
     width: 40%;
     position: relative;
     margin: 10px;
@@ -432,13 +457,8 @@ main {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1024px) {
-  .working .working-list__item {
-    padding: 0 50px;
-  }
-}
 .working .working-list__text {
-  margin-left: 20px;
+  padding: 14.5px;
   font-size: 0.9rem;
 }
 .working .working-list__stepnumber {
@@ -551,7 +571,6 @@ main {
 }
 .restaurants .restaurant__card .card__restaurant-location {
   color: #717171;
-  margin: 0;
 }
 
 /*# sourceMappingURL=home.css.map */
