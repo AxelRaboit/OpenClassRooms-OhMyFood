@@ -50,7 +50,6 @@ h2, h3 {
   box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.5);
   position: fixed;
   z-index: 6;
-  /* @include desktop-size; */
   text-align: center;
   background-color: #ffffff;
   width: 100%;
@@ -327,9 +326,6 @@ a {
   text-decoration: none;
 }
 
-/* body {
-    @include desktop-size;
-} */
 main {
   padding-top: 60px;
 }
@@ -433,12 +429,8 @@ main {
   flex-direction: row;
   border-radius: 15px;
   margin: 0 0 20px 10px;
-  /* padding: 0 30px; */
   background-color: #f4f4f4;
   box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.2);
-  /* @include desktop {
-      padding: 0 50px;
-  } */
 }
 .working .working-list__item:hover {
   background-color: #f1eafb;
@@ -458,7 +450,7 @@ main {
   }
 }
 .working .working-list__text {
-  padding: 14.5px;
+  padding: 20px;
   font-size: 0.9rem;
 }
 .working .working-list__stepnumber {
@@ -479,7 +471,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .working .working-list__stepnumber {
     width: 30px;
-    height: 46px;
+    height: 57px;
     border-radius: 15px 0 0 15px;
     left: 15px;
   }
@@ -487,7 +479,7 @@ main {
 @media screen and (min-width: 1024px) {
   .working .working-list__stepnumber {
     width: 30px;
-    height: 46px;
+    height: 57px;
     border-radius: 15px 0 0 15px;
     left: 15px;
   }

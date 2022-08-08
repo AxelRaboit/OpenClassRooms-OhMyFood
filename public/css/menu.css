@@ -50,7 +50,6 @@ h2, h3 {
   box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.5);
   position: fixed;
   z-index: 6;
-  /* @include desktop-size; */
   text-align: center;
   background-color: #ffffff;
   width: 100%;
@@ -327,9 +326,6 @@ a {
   text-decoration: none;
 }
 
-/* body {
-    @include desktop-size;
-} */
 main {
   padding-top: 60px;
 }
