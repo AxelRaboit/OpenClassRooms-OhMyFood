@@ -1,0 +1,37 @@
+@for $i from 1 through 3 {
+    .container-slide-up:nth-of-type(#{$i}) {
+
+        @for $e from 1 through 4 {
+            .slide-up:nth-of-type(#{$e}){
+                animation-delay: calc($e * 0.1s) + calc(calc($i - 1)*0.3);
+            }  
+        }
+    }
+}
+
+.slide-up {
+    /* This property is used to define which animation we want to use */
+    animation-name: slide;
+    /* This property is used to define the animation duration */
+    animation-duration: 2s;
+    /* This property indicates the number of cycles used to repeat an animation before it stops */
+    animation-iteration-count: 1;
+    /* This property is used to define the opacity at the beginning */
+    opacity: 0;
+    /* This property indicates how a css animation should apply styles to its target before and after execution */
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide{
+    from {
+        opacity: 0;
+        transform: translate(0, 50%);
+        
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+}
+

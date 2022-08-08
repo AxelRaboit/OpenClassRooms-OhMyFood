@@ -1,16 +1,14 @@
 .location {
-    @include flexbox($flex-direction: row);
     font-size: font--text-regular;
     font-weight: bold;
     background-color: $colour-background-secondary;
 
-    &__icon {
-        margin-right: 10px;
+    &__content {
+        @include flexbox($flex-direction: row);
     }
 
     &__city {
         height: 51px;
-        padding: 0;
         text-align: center;
         background: $colour-background-secondary;
         border: none;
@@ -43,13 +41,21 @@
     background-color: $colour-background;
 
     &__text {
-        margin: 0 0 30px 0;
+        margin: 20px 0 30px 0;
         font-size: $fontsize--description;
         color: $colour-fourthary;
     }
 
+    &__container__button {
+        @include flexbox;
+    }
+
     &__button {
         margin-bottom: 30px;
+
+        p {
+            padding: $padding-regular-text;
+        }
     }
 }
 
@@ -66,9 +72,7 @@
         @include desktop {
             @include flexbox ($justify-content: space-between, $flex-direction: row);
         }
-
         margin: 30px 0 0 0;
-        padding: 0;
         position: relative;
 
         &__item {
@@ -78,7 +82,7 @@
             }
 
             @include desktop {
-                justify-content: flex-end;
+                justify-content: center;
                 width: 40%;
                 position: relative;
                 margin: 10px;
@@ -95,17 +99,12 @@
             @include flexbox($flex-direction: row);
             border-radius: 15px;
             margin: 0 0 20px 10px;
-            padding: 0 30px;
             background-color: $colour-background;
             box-shadow: $boxshadow--card;
-
-            @include desktop {
-                padding: 0 50px;
-            }
         }
 
         &__text {
-            margin-left: 20px;
+            padding: 20px;
             font-size: $fontsize--middle;
         }
 
@@ -122,14 +121,14 @@
 
             @include tablet {
                 width: 30px;
-                height: 46px;
+                height: 57px;
                 border-radius: 15px 0 0 15px;
                 left: 15px;
             }
 
             @include desktop {
                 width: 30px;
-                height: 46px;
+                height: 57px;
                 border-radius: 15px 0 0 15px;
                 left: 15px;
             }
@@ -150,7 +149,6 @@
 }
 
 .restaurants {
-
     background-color: $colour-background;
     padding: 20px;
 
@@ -210,6 +208,10 @@
                         font-weight: bold;
                         color: darken($colour-tertiary, $amount: 35)
                     }
+
+                    a {
+                        width: 100%;
+                    }
                 }
 
                 &__restaurant-name {
@@ -219,7 +221,6 @@
 
                 &__restaurant-location {
                     color: $colour-fourthary;
-                    margin: 0;
                 }
             }
         }

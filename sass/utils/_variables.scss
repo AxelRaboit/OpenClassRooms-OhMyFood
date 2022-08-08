@@ -6,6 +6,7 @@ $colour-fourthary: #717171;
 $colour-background: #f4f4f4;
 $colour-background-secondary: #E5E5E5;
 $colour-light-darker: #f4f4f4;
+$colour-light-darker-low-opacity: rgba(244, 244, 244, 0.691);
 $colour-light: #ffffff;
 $colour-dark-placeholder-chrm: #5D5D5D;
 $colour-dark-placeholder-moz: #000000;
@@ -15,6 +16,7 @@ $font--text-regular: 'Roboto', sans-serif;
 $font--text-secondary: 'Shrikhand', cursive;
 
 /* General */
+$padding-regular-text: 14.5px;
 $padding-regular: 20px;
 $padding-vertical: 20px 0;
 $padding-horizontal: 0 20px;

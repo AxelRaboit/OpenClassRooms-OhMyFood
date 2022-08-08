@@ -3,7 +3,7 @@
     box-shadow: 0px 5px 5px rgb(128 128 128 / 50%);
     position: fixed;
     z-index: 6;
-    @include desktop-size;
+    text-align: center;
     background-color: $colour-light;
     width: 100%;
 }

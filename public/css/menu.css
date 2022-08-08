@@ -50,9 +50,7 @@ h2, h3 {
   box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.5);
   position: fixed;
   z-index: 6;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   background-color: #ffffff;
   width: 100%;
 }
@@ -74,7 +72,7 @@ h2, h3 {
 }
 @media screen and (min-width: 1024px) {
   .footer__title {
-    padding: 20px;
+    padding: 20px 0 0 20px;
   }
 }
 .footer__list {
@@ -103,6 +101,7 @@ h2, h3 {
 }
 
 .heart {
+  cursor: pointer;
   position: absolute;
   bottom: 25px;
   right: 25px;
@@ -159,6 +158,68 @@ h2, h3 {
   animation-delay: 0.1s;
 }
 
+.container-slide-up:nth-of-type(1) .slide-up:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.container-slide-up:nth-of-type(1) .slide-up:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.container-slide-up:nth-of-type(1) .slide-up:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.container-slide-up:nth-of-type(1) .slide-up:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+
+.container-slide-up:nth-of-type(2) .slide-up:nth-of-type(1) {
+  animation-delay: 0.4s;
+}
+.container-slide-up:nth-of-type(2) .slide-up:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+.container-slide-up:nth-of-type(2) .slide-up:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+.container-slide-up:nth-of-type(2) .slide-up:nth-of-type(4) {
+  animation-delay: 0.7s;
+}
+
+.container-slide-up:nth-of-type(3) .slide-up:nth-of-type(1) {
+  animation-delay: 0.7s;
+}
+.container-slide-up:nth-of-type(3) .slide-up:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+.container-slide-up:nth-of-type(3) .slide-up:nth-of-type(3) {
+  animation-delay: 0.9s;
+}
+.container-slide-up:nth-of-type(3) .slide-up:nth-of-type(4) {
+  animation-delay: 1s;
+}
+
+.slide-up {
+  /* This property is used to define which animation we want to use */
+  animation-name: slide;
+  /* This property is used to define the animation duration */
+  animation-duration: 2s;
+  /* This property indicates the number of cycles used to repeat an animation before it stops */
+  animation-iteration-count: 1;
+  /* This property is used to define the opacity at the beginning */
+  opacity: 0;
+  /* This property indicates how a css animation should apply styles to its target before and after execution */
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
 .button {
   display: flex;
   justify-content: center;
@@ -170,6 +231,7 @@ h2, h3 {
   color: #ffffff;
   background: linear-gradient(#FF79DA, #9256dc);
   min-width: 150px;
+  max-width: 250px;
 }
 .button:hover {
   filter: brightness(1.2);
@@ -316,14 +378,26 @@ h2, h3 {
   left: 12px;
 }
 
-body {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 main {
   padding-top: 60px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header__items {
@@ -348,11 +422,39 @@ main {
   z-index: -1;
   width: 100%;
 }
+@media screen and (min-width: 1024px) {
+  .restaurant-visual__image {
+    height: 100%;
+  }
+}
 
 .menu {
   margin-top: 200px;
-  background-color: #f4f4f4;
+}
+@media screen and (min-width: 1024px) {
+  .menu .container {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    margin: 120px 100px 120px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: no-wrap;
+    flex-direction: column;
+  }
+}
+.menu__content {
   border-radius: 30px 30px 0 0;
+  background-color: #f4f4f4;
+}
+@media screen and (min-width: 1024px) {
+  .menu__content {
+    background-color: rgba(244, 244, 244, 0.691);
+    border-radius: 30px;
+  }
 }
 .menu .menu-header {
   display: flex;
@@ -366,19 +468,16 @@ main {
 .menu .menu-header__title {
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
-  margin-bottom: 0;
 }
 .menu .menu-header__heart {
-  position: absolute;
   font-size: 30px;
-  right: 60px;
-  top: 40px;
 }
-.menu .menu-detail__section {
-  padding: 0 20px 0 20px;
+.menu .menu-detail {
+  margin: 20px;
 }
 .menu .menu-detail__title {
   font-weight: 100;
+  margin-bottom: 20px;
 }
 .menu .menu-detail__title::after {
   height: 3px;
@@ -392,6 +491,7 @@ main {
   margin-bottom: 50px;
 }
 .menu .menu-detail-content__container {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -401,6 +501,7 @@ main {
   background-color: #ffffff;
   margin-bottom: 20px;
   box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.2);
+  width: 100%;
 }
 .menu .menu-detail-content__price {
   padding-right: 20px;
@@ -437,6 +538,9 @@ main {
 .menu .order__button {
   min-width: 200px;
   border: none;
+}
+.menu .order__button p {
+  padding: 14.5px;
 }
 
 /*# sourceMappingURL=menu.css.map */
