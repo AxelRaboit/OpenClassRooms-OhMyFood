@@ -557,6 +557,9 @@ main {
   font-weight: bold;
   color: #2c9c81;
 }
+.restaurants .restaurant__card .card__description a {
+  width: 100%;
+}
 .restaurants .restaurant__card .card__restaurant-name {
   font-size: 1.2rem;
   margin: 6px 0 6px 0;
