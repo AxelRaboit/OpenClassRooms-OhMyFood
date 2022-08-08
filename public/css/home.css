@@ -101,6 +101,7 @@ h2, h3 {
 }
 
 .heart {
+  cursor: pointer;
   position: absolute;
   bottom: 25px;
   right: 25px;
@@ -157,6 +158,68 @@ h2, h3 {
   animation-delay: 0.1s;
 }
 
+.container-slide-up:nth-of-type(1) .slide-up:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.container-slide-up:nth-of-type(1) .slide-up:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.container-slide-up:nth-of-type(1) .slide-up:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.container-slide-up:nth-of-type(1) .slide-up:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+
+.container-slide-up:nth-of-type(2) .slide-up:nth-of-type(1) {
+  animation-delay: 0.4s;
+}
+.container-slide-up:nth-of-type(2) .slide-up:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+.container-slide-up:nth-of-type(2) .slide-up:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+.container-slide-up:nth-of-type(2) .slide-up:nth-of-type(4) {
+  animation-delay: 0.7s;
+}
+
+.container-slide-up:nth-of-type(3) .slide-up:nth-of-type(1) {
+  animation-delay: 0.7s;
+}
+.container-slide-up:nth-of-type(3) .slide-up:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+.container-slide-up:nth-of-type(3) .slide-up:nth-of-type(3) {
+  animation-delay: 0.9s;
+}
+.container-slide-up:nth-of-type(3) .slide-up:nth-of-type(4) {
+  animation-delay: 1s;
+}
+
+.slide-up {
+  /* This property is used to define which animation we want to use */
+  animation-name: slide;
+  /* This property is used to define the animation duration */
+  animation-duration: 2s;
+  /* This property indicates the number of cycles used to repeat an animation before it stops */
+  animation-iteration-count: 1;
+  /* This property is used to define the opacity at the beginning */
+  opacity: 0;
+  /* This property indicates how a css animation should apply styles to its target before and after execution */
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
 .button {
   display: flex;
   justify-content: center;

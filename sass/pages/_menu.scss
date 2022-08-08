@@ -60,10 +60,7 @@
         }
 
         &__heart {
-            position: absolute;
             font-size: 30px;
-            right: 60px;
-            top: 20px;
         }
     }
 
@@ -92,6 +89,7 @@
         margin-bottom: 50px;
 
         &__container {
+            cursor: pointer;
             @include flexbox($flex-direction: row, $justify-content: space-between, $align-items: center);
             border-radius: 20px;
             background-color: $colour-light;
