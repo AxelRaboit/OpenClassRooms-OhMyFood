@@ -72,7 +72,7 @@ h2, h3 {
 }
 @media screen and (min-width: 1024px) {
   .footer__title {
-    padding: 20px;
+    padding: 20px 0 0 20px;
   }
 }
 .footer__list {

@@ -31,11 +31,13 @@
     margin-top: 200px;
 
     .container {
-        max-width: 1000px;
+        @include desktop {
+            padding: 20px;
+        }
     }
 
     @include desktop {
-        margin: 120px 50px 120px 50px;
+        margin: 120px 100px 120px 100px;
         @include flexbox;
     }
 
