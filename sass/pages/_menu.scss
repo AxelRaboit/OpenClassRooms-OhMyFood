@@ -27,6 +27,44 @@
     }
 }
 
+.thumbnail-menu {
+
+    
+    &__container {
+        margin-bottom: 20px;
+        @include flexbox($flex-direction: row, $justify-content: flex-start);
+        
+        .image {
+            &__delice-des-sens {
+                object-position: 60% 90%;
+            }
+            &__la-palette-du-gout {
+                object-position: 60% 80%;
+            }
+            &__la-note-enchantee {
+                object-position: 60% 61%;
+            }
+            &__a-la-francaise {
+                object-position: 60% 98%;
+            }
+        }
+    }
+    
+    &__image {
+        display: none;
+        /* object-fit: cover; */
+        object-fit: cover;
+        /* width: 100%; */
+        height: 500px;
+        border-radius: 30px;
+        border: solid $colour-tertiary 3px;
+
+        @include desktop {
+            display: block;
+        }
+    }
+}
+
 .menu {
     margin-top: 200px;
 

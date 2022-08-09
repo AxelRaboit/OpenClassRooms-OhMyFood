@@ -428,6 +428,41 @@ main {
   }
 }
 
+.thumbnail-menu__container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+}
+.thumbnail-menu__container .image__delice-des-sens {
+  object-position: 60% 90%;
+}
+.thumbnail-menu__container .image__la-palette-du-gout {
+  object-position: 60% 80%;
+}
+.thumbnail-menu__container .image__la-note-enchantee {
+  object-position: 60% 61%;
+}
+.thumbnail-menu__container .image__a-la-francaise {
+  object-position: 60% 98%;
+}
+.thumbnail-menu__image {
+  display: none;
+  /* object-fit: cover; */
+  object-fit: cover;
+  /* width: 100%; */
+  height: 500px;
+  border-radius: 30px;
+  border: solid #99E2D0 3px;
+}
+@media screen and (min-width: 1024px) {
+  .thumbnail-menu__image {
+    display: block;
+  }
+}
+
 .menu {
   margin-top: 200px;
 }
