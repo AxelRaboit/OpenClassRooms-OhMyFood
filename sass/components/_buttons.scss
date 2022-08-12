@@ -6,9 +6,9 @@
     background: linear-gradient($colour-secondary, $colour-primary);
     min-width: 150px;
     max-width: 250px;
+    cursor: pointer;
  
     &:hover{
        filter: brightness(1.2); 
-       cursor: pointer;
     }
  }
