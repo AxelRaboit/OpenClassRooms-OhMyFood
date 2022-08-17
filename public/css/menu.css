@@ -99,6 +99,9 @@ h2, h3 {
 .footer__link:hover {
   color: #FF79DA;
 }
+.footer .fa-handshake-angle {
+  transform: scale(0.7, 1);
+}
 
 .heart {
   cursor: pointer;
@@ -232,10 +235,10 @@ h2, h3 {
   background: linear-gradient(#FF79DA, #9256dc);
   min-width: 150px;
   max-width: 250px;
+  cursor: pointer;
 }
 .button:hover {
   filter: brightness(1.2);
-  cursor: pointer;
 }
 
 /* Title: Loader page Transition from appear to disappear
